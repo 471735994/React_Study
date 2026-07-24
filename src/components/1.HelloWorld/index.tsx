@@ -9,11 +9,14 @@ interface HellowWorldProps {
 export const HellowWorld = (props: HellowWorldProps) => {
   const { title, render } = props;
   const [count, setCount] = useState(0);
+  const handleAdd = () => {
+    setCount(count + 1);
+  };
 
   return (
     <h1>
       Hello World + {title} + {render?.(count)}+{count}+
-      <button onClick={() => setCount(count + 1)}></button>
+      <button onClick={handleAdd}></button>
     </h1>
   );
 };
