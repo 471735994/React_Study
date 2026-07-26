@@ -1,10 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const Hooks = () => {
   const [count, setCount] = useState(0);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const handleAdd = () => {
     setCount((c) => c + 1);
+  };
+  const handleInputFocus = () => {
+    inputRef.current?.focus();
   };
 
   useEffect(() => {
@@ -27,6 +31,8 @@ export const Hooks = () => {
     // mountedRef.current = true;
     //空数组，在组件挂载时渲染一次，组件卸载时渲染一次
     console.log("组件挂载完成！");
+    handleInputFocus(); //组件挂载时自动聚焦输入框
+    console.log(inputRef.current); //组件挂载时，有值表示组件已经挂
     return () => {
       console.log("组件卸载完成！");
     };
@@ -36,6 +42,7 @@ export const Hooks = () => {
     <div>
       <div>当前计数：{count}</div>
       <button onClick={handleAdd}>增加</button>
+      <input ref={inputRef}></input>
     </div>
   );
 };
