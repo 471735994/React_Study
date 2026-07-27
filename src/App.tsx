@@ -4,7 +4,8 @@ import "./App.css";
 // import { BasicState } from "./components/2.BasicState";
 // import { List } from "./components/3.List";
 // import { Hooks } from "./components/4.Hooks";
-import { FormAction } from "./components/5.Form";
+// import { FormAction } from "./components/5.Form";
+import { SuspenseDemo } from "./components/6.Suspense/SuspenseDemo";
 
 function App() {
   // const [isShow, setIsShow] = useState(true);
@@ -14,7 +15,8 @@ function App() {
 
   return (
     <>
-      <FormAction />
+      <SuspenseDemo />
+      {/* <FormAction /> */}
       {/* <HellowWorld
         title="Hello World123"
         render={(count) => <div>123+{count}</div>}
