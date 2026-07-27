@@ -5,7 +5,9 @@ import "./App.css";
 // import { List } from "./components/3.List";
 // import { Hooks } from "./components/4.Hooks";
 // import { FormAction } from "./components/5.Form";
-import { SuspenseDemo } from "./components/6.Suspense/SuspenseDemo";
+// import { SuspenseDemo } from "./components/6.Suspense/SuspenseDemo";
+// import { SuspenseNew } from "./components/7.SuspenseNew/SuspenseNew";
+import { UseReducer } from "./components/8.UseReducer/UserReducer";
 
 function App() {
   // const [isShow, setIsShow] = useState(true);
@@ -15,7 +17,8 @@ function App() {
 
   return (
     <>
-      <SuspenseDemo />
+      <UseReducer />
+      {/* <SuspenseNew /> */}
       {/* <FormAction /> */}
       {/* <HellowWorld
         title="Hello World123"
