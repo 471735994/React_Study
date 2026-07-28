@@ -7,7 +7,8 @@ import "./App.css";
 // import { FormAction } from "./components/5.Form";
 // import { SuspenseDemo } from "./components/6.Suspense/SuspenseDemo";
 // import { SuspenseNew } from "./components/7.SuspenseNew/SuspenseNew";
-import { UseReducer } from "./components/8.UseReducer/UserReducer";
+// import { UseReducer } from "./components/8.UseReducer/UserReducer";
+import { Parent } from "./components/9.UseContext/Parent";
 
 function App() {
   // const [isShow, setIsShow] = useState(true);
@@ -17,7 +18,8 @@ function App() {
 
   return (
     <>
-      <UseReducer />
+      <Parent />
+      {/* <UseReducer /> */}
       {/* <SuspenseNew /> */}
       {/* <FormAction /> */}
       {/* <HellowWorld
