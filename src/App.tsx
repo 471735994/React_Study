@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import "./App.css";
+import { CustomHooks } from "./components/11.CustomHooks";
 // import { HellowWorld } from "./components/1.HelloWorld";
 // import { BasicState } from "./components/2.BasicState";
 // import { List } from "./components/3.List";
@@ -8,7 +9,7 @@ import "./App.css";
 // import { SuspenseDemo } from "./components/6.Suspense/SuspenseDemo";
 // import { SuspenseNew } from "./components/7.SuspenseNew/SuspenseNew";
 // import { UseReducer } from "./components/8.UseReducer/UserReducer";
-import { Parent } from "./components/9.UseContext/Parent";
+// import { Parent } from "./components/9.UseContext/Parent";
 
 function App() {
   // const [isShow, setIsShow] = useState(true);
@@ -18,7 +19,8 @@ function App() {
 
   return (
     <>
-      <Parent />
+      <CustomHooks />
+      {/* <Parent /> */}
       {/* <UseReducer /> */}
       {/* <SuspenseNew /> */}
       {/* <FormAction /> */}

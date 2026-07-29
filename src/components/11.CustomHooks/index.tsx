@@ -9,14 +9,14 @@ export const CustomHooks = () => {
       <p>当前计数：{count}</p>
       <button
         onClick={() => {
-          setCount(count + 1);
+          setCount((c) => c + 1);
         }}
       >
         增加
       </button>
       <button
         onClick={() => {
-          setCount(count - 1);
+          setCount((c) => c - 1);
         }}
       >
         减少
